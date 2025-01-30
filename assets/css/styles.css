@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../fonts/Roboto-Bold.ttf");
+}
+
+body, h1, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #36384D;
+  font-family: "Roboto-Regular", sans-serif;
+  color: #242742;
+  line-height: 150%;
+}
+
+h1 {
+  font-family: "Roboto-Bold", sans-serif;
+  font-size: clamp(2.5rem, 2.1479rem + 1.5023vw, 3.5rem);
+  line-height: 100%;
+}
+
+main {
+  background-color: #fff;
+  gap: 2.5rem;
+  padding-bottom: 2.5rem;
+  width: 100%;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+picture img{
+  width: 100%;
+}
+
+section {
+  padding: 0 1.5rem;
+  gap: 2.5rem;
+}
+
+.component-info{
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+li:not(:last-child) {
+  margin-bottom: 0.625rem;
+}
+
+form {
+  gap: 1.5rem
+}
+
+label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 150%;
+  margin-bottom: 0.5rem;
+}
+
+input {
+  border: 1px solid #19182B40;
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  line-height: 150%;
+  color: #242742;
+}
+
+input::placeholder{
+  color: #24274280;
+  line-height: 150%;
+  font-size: 1rem;
+}
+
+button {
+  color:#fff;
+  font-weight: 700;
+  line-height: 150%;
+  background-color: #242742;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1.125rem 0;
+}
+
+
