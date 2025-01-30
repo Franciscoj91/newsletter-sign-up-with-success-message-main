@@ -1,16 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 
-  
+  <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
-<body>
 
+<body>
+  <main class="flex-column">
+    <picture>
+      <source media="(min-width: 768px)" srcset="./assets/images/illustration-sign-up-desktop.svg">
+      <img src="./assets/images/illustration-sign-up-mobile.svg" alt="illustration">
+    </picture>
+    <section class="flex-column">
+      <div class="flex-column component-info">
+        
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul>
+          <li><img src="./assets/images/icon-list.svg" alt="check icon">Product discovery and building what matters</li>
+          <li><img src="./assets/images/icon-list.svg" alt="check icon">Measuring to ensure updates are a success</li>
+          <li><img src="./assets/images/icon-list.svg" alt="check icon">And much more!</li>
+        </ul>
+      </div>
+      <form action="" class="flex-column">
+        <div class="flex-column">
+          <label for="email">Email address</label>
+          <input type="email" placeholder="email@company.com" id="email" required>
+
+        </div>
+        <button type="submit">Subscribe to monthly newsletter</button>
+      </form>
+    </section>
+  </main>
 </body>
+
 </html>
