@@ -31,12 +31,11 @@ main {
   gap: 2.5rem;
   padding-bottom: 2.5rem;
   width: 100%;
+  flex-direction: column;
 }
 
-.flex-column {
-  display: flex;
-  flex-direction: column;
-  
+.flex {
+  display: flex; 
 }
 
 picture img{
@@ -46,11 +45,13 @@ picture img{
 section {
   padding: 0 1.5rem;
   gap: 2.5rem;
+  flex-direction: column;
 }
 
 .component-info{
   gap: 1.5rem;
   align-items: flex-start;
+  flex-direction: column;
 }
 
 ul {
@@ -68,14 +69,19 @@ li:not(:last-child) {
 }
 
 form {
-  gap: 1.5rem
+  gap: 1.5rem;
+  flex-direction: column;
+}
+
+.input-group {
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 label {
   font-size: 0.75rem;
   font-weight: 700;
   line-height: 150%;
-  margin-bottom: 0.5rem;
 }
 
 input {
@@ -101,6 +107,32 @@ button {
   border: none;
   border-radius: 0.5rem;
   padding: 1.125rem 0;
+  cursor: pointer;
+}
+
+@media (min-width: 48rem) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  main {
+    flex-direction: row-reverse;
+    border-radius: 36px;
+    padding: 24px;
+    gap: 64px;
+    width: 928px;
+    box-sizing: border-box;
+  }
+
+  section {
+    justify-content: center;
+    width: 375px;
+    padding: 0;
+  }
 }
 
 
