@@ -10,6 +10,7 @@
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 
   <link rel="stylesheet" href="./assets/css/styles.css">
+  <script defer src="./assets/js/index.js"></script>
 </head>
 
 <body>
@@ -29,9 +30,9 @@
           <li><img src="./assets/images/icon-list.svg" alt="check icon">And much more!</li>
         </ul>
       </div>
-      <form action="" class="flex">
+      <form action="" class="flex" novalidate>
         <div class="flex input-group">
-          <label for="email">Email address</label>
+          <label for="email">Email address <span id="error-message">Valid email required</span></label>
           <input type="email" placeholder="email@company.com" id="email" required>
 
         </div>
@@ -39,6 +40,17 @@
       </form>
     </section>
   </main>
+
+  <section id="success-page">
+    <div class="flex success-info">
+      <img src="./assets/images/icon-success.svg" alt="success-icon">
+      <div class="flex success-info-text">
+        <h1>Thanks for subscribing!</h1>
+        <p>A confirmation email has been sent to <span id="user-email"></span>. Please open it and click the button inside to confirm your subscription</p>
+      </div>
+    </div>
+    <button id="success-button">Dismiss message</button>
+  </section>
 </body>
 
 </html>
